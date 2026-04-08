@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inactive transport button (⏮ ⏸ ⏹) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item><shape><solid android:color="#8A8278"/></shape></item>
+            <item android:left="2dp" android:top="2dp">
+                <shape><solid android:color="#B8B0A8"/></shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item><shape><solid android:color="#6A6258"/></shape></item>
+            <item android:bottom="2dp" android:right="2dp">
+                <shape><solid android:color="#8A8278"/></shape>
+            </item>
+            <item android:bottom="4dp" android:right="4dp" android:left="2dp" android:top="2dp">
+                <shape><solid android:color="#D0C8BE"/></shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

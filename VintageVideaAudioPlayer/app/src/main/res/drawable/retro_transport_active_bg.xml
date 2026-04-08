@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Active Play button — Poolsuite teal-blue highlight -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item><shape><solid android:color="#5A8888"/></shape></item>
+            <item android:left="2dp" android:top="2dp">
+                <shape><solid android:color="#80AAAA"/></shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item><shape><solid android:color="#3E6868"/></shape></item>
+            <item android:bottom="2dp" android:right="2dp">
+                <shape><solid android:color="#5A8888"/></shape>
+            </item>
+            <item android:bottom="4dp" android:right="4dp" android:left="2dp" android:top="2dp">
+                <shape><solid android:color="#A8C8C8"/></shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

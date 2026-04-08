@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── App Theme ──────────────────────────────── -->
+    <style name="Theme.PoolsuitePlayer" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/retro_accent_pink</item>
+        <item name="colorPrimaryVariant">@color/retro_bezel</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/retro_pink_bg</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="RetroButton">
+
+        <item name="android:background">@drawable/retro_btn_bg</item>
+        <item name="android:textColor">@color/retro_text_dark</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <!-- Remove Material ui  -->
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="RetroTransportButton">
+        <item name="android:background">@drawable/retro_transport_bg</item>
+        <item name="android:textColor">@color/retro_text_dark</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- ══════════════════════════════════════════════
+         RetroTransportButtonActive — ▶  (Play, highlighted)
+         Uses the teal-blue active colour from Poolsuite.
+         ══════════════════════════════════════════════ -->
+    <style name="RetroTransportButtonActive" parent="RetroTransportButton">
+        <item name="android:background">@drawable/retro_transport_active_bg</item>
+        <item name="android:textColor">@color/retro_text_dark</item>
+    </style>
+
+</resources>

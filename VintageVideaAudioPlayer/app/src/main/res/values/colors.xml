@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ═══════════════════════════════════════════════
+     POOLSUITE FM — Color Palette
+     Inspired by poolsuite.net: warm pinks, creams,
+     muted greens, and VHS-era greys.
+     ═══════════════════════════════════════════════ -->
+<resources>
+
+    <!-- ── Backgrounds ────────────────────────────── -->
+    <!-- Outer desktop / wallpaper — warm blush pink matching the screenshot -->
+    <color name="retro_pink_bg">#F2C5C5</color>
+
+    <!-- Window body — off-white cream -->
+    <color name="retro_window_bg">#EDE6DF</color>
+
+    <!-- Toolbar strips inside window -->
+    <color name="retro_toolbar_bg">#E2D9D0</color>
+
+    <!-- Title bar — slightly darker warm grey -->
+    <color name="retro_title_bar">#C9BCAF</color>
+
+    <!-- Input field background — near-white parchment -->
+    <color name="retro_input_bg">#FAF6F1</color>
+
+    <!-- Track info panel — slightly warmer than window body -->
+    <color name="retro_info_bg">#E8DED4</color>
+
+    <!-- Status bar under video -->
+    <color name="retro_statusbar_bg">#2A2A2A</color>
+
+    <!-- ── CRT / Bezel ─────────────────────────────── -->
+    <!-- Monitor outer bezel — near-black charcoal -->
+    <color name="retro_bezel">#1E1E1E</color>
+
+    <!-- Screen idle background — deep black-green like CRT phosphor -->
+    <color name="retro_screen_bg">#0A0E08</color>
+
+    <!-- ── Text ────────────────────────────────────── -->
+    <color name="retro_text_dark">#2C2420</color>
+    <color name="retro_text_muted">#8A7E76</color>
+    <color name="retro_title_text">#3A3028</color>
+    <color name="retro_statusbar_text">#AAAAAA</color>
+
+    <!-- ── Accent ──────────────────────────────────── -->
+    <!-- Poolsuite's signature neon pink / coral -->
+    <color name="retro_accent_pink">#E8486A</color>
+
+    <!-- Muted sage green used on active transport button -->
+    <color name="retro_accent_green">#8DB88D</color>
+
+    <!-- Warm amber for hover / focus states -->
+    <color name="retro_accent_amber">#D4A853</color>
+
+    <!-- ── Button surfaces ─────────────────────────── -->
+    <!-- Default transport button — raised light grey -->
+    <color name="retro_btn_normal">#D0C8BE</color>
+    <color name="retro_btn_normal_border">#A09488</color>
+
+    <!-- Active (Play) button — soft teal-blue like Poolsuite's play highlight -->
+    <color name="retro_btn_active">#A8C8C8</color>
+    <color name="retro_btn_active_border">#6A9C9C</color>
+
+    <!-- ── Misc ────────────────────────────────────── -->
+    <!-- Bottom shadow strip under window chrome -->
+    <color name="retro_shadow">#B0A49A</color>
+
+    <!-- System colors (keep these for compatibility) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

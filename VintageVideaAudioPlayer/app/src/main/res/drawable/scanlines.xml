@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scanlines.xml — CRT scanline atmosphere overlay -->
+<!-- For a real pixel-accurate scanline, replace with a BitmapDrawable
+     pointing to a 1x2 px PNG (transparent + #22000000 rows).
+     This gradient approximates the feel for a pure-XML approach. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="#33000000"
+        android:centerColor="#00000000"
+        android:endColor="#33000000"/>
+</shape>

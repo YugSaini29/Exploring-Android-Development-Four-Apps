@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Toolbar button raised 3-D effect (Open File / Open URL) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed: sunken look -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#A09488"/>
+                </shape>
+            </item>
+            <item android:left="2dp" android:top="2dp">
+                <shape>
+                    <solid android:color="#C2B9AF"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Normal: raised Win95 style -->
+    <item>
+        <layer-list>
+            <!-- Darkest outer shadow -->
+            <item>
+                <shape><solid android:color="#7A706A"/></shape>
+            </item>
+            <!-- Mid shadow -->
+            <item android:bottom="1dp" android:right="1dp">
+                <shape><solid android:color="#A09488"/></shape>
+            </item>
+            <!-- Button face -->
+            <item android:bottom="2dp" android:right="2dp">
+                <shape><solid android:color="#D8CFC6"/></shape>
+            </item>
+            <!-- Highlight: top + left bright edge -->
+            <item android:bottom="3dp" android:right="3dp" android:left="1dp" android:top="1dp">
+                <shape><solid android:color="#E8E0D8"/></shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

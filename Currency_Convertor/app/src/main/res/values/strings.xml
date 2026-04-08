@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency_Convertor</string>
+    <string name="currentinputhint">currentInput</string>
+    <string name="enter_amounthint">Enter Amount</string>
+    <string name="convert">Convert</string>
+    <string name="result">Result:</string>
+    <string name="dark_mode_str">Dark Mode</string>
+    <string name="swtich">Swtich</string>
+</resources>

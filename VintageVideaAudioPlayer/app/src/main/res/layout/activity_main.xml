@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/retro_pink_bg"
+    android:fillViewport="true"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/retro_title_bar"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/dot_close"
+                android:layout_marginEnd="6dp"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/dot_min"
+                android:layout_marginEnd="6dp"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/dot_max"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retro Player"
+                android:fontFamily="monospace"
+                android:textSize="11sp"
+                android:letterSpacing="0.25"
+                android:textColor="@color/retro_title_text"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/retro_window_bg"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/retro_toolbar_bg"
+                android:padding="6dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/openFileBtn"
+                    style="@style/RetroButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Open File"
+                    android:textColor="@color/retro_input_bg"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/openUrlBtn"
+                    style="@style/RetroButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:textColor="@color/retro_input_bg"
+                    android:text="Open URL"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/retro_bezel"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@color/retro_screen_bg">
+
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/noSignalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="NO SIGNAL"
+                        android:fontFamily="monospace"
+                        android:textSize="18sp"
+                        android:textColor="#80FFFFFF"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:background="@color/retro_statusbar_bg"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/fileNameLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:text="No file loaded"
+                        android:fontFamily="monospace"
+                        android:textSize="10sp"
+                        android:textColor="@color/retro_statusbar_text"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="592×456"
+                        android:fontFamily="monospace"
+                        android:textSize="10sp"
+                        android:textColor="@color/retro_statusbar_text"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/restartBtn"
+                    style="@style/RetroTransportButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="⏮"/>
+
+                <Button
+                    android:id="@+id/playBtn"
+                    style="@style/RetroTransportButtonActive"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="▶"/>
+
+                <Button
+                    android:id="@+id/pauseBtn"
+                    style="@style/RetroTransportButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="⏸"/>
+
+                <Button
+                    android:id="@+id/stopBtn"
+                    style="@style/RetroTransportButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="⏹"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/retro_toolbar_bg"
+                android:padding="8dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/urlInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:hint="Enter stream or video URL…"
+                    android:inputType="textUri"
+                    android:background="@android:color/white"
+                    android:paddingHorizontal="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#999999"
+                    android:importantForAutofill="no"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/retro_shadow"/>
+
+    </LinearLayout>
+</LinearLayout>
