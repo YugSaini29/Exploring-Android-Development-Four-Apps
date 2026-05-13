@@ -122,3 +122,26 @@ Android-Utility-Apps/
 │   └── Audio and video player Android app
 │
 └── .gitignore
+```
+
+# Learning Outcomes
+
+Through these projects, I learned and practiced:
+
+- Building Android apps using Java and XML
+- Designing layouts using XML
+- Handling multiple activities and intents
+- Working with device sensors
+- Using media playback features
+- Capturing and displaying images
+- Managing files and permissions
+- Using RecyclerView for gallery-style layouts
+- Saving small user preferences using SharedPreferences
+- Debugging Android apps in Android Studio
+# How to Run
+Clone the repository:
+``` git clone https://github.com/YugSaini29/Exploring-Android-Development-Four-Apps ```
+- Open the required app folder in Android Studio.
+- Let Gradle sync completely.
+- Connect an Android device or start an emulator.
+- Click Run to install and test the app.
