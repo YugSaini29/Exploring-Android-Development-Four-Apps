@@ -124,7 +124,7 @@ Android-Utility-Apps/
 └── .gitignore
 ```
 
-# Learning Outcomes
+## Learning Outcomes
 
 Through these projects, I learned and practiced:
 
@@ -138,7 +138,7 @@ Through these projects, I learned and practiced:
 - Using RecyclerView for gallery-style layouts
 - Saving small user preferences using SharedPreferences
 - Debugging Android apps in Android Studio
-# How to Run
+## How to Run
 Clone the repository:
 ``` git clone https://github.com/YugSaini29/Exploring-Android-Development-Four-Apps ```
 - Open the required app folder in Android Studio.
